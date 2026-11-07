@@ -2,28 +2,38 @@
 <html>
     <head>
         <title>Join | KahootClone</title>
-        <link rel = "stylesheet" href = "css/index.css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="css/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;800;900&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <h1 id = "title">Join a Game</h1>
-        <form action="/player/">
+        <div class="bg-orb orb-one"></div>
+        <div class="bg-orb orb-two"></div>
+        <div class="bg-orb orb-three"></div>
+
+        <main class="app-shell">
+            <div class="brand-mark">QUIZ ARENA</div>
+            <h1 id="title">Join the Arena</h1>
+            <p class="subtitle">Enter your character name and game pin to begin your battle.</p>
+
+            <form action="/player/" class="join-form">
                 <div class="form-field">
-                    <label id = "label">Display Name</label>
-                    <input id = "name" type = "text" name="name" autofocus/>
+                    <label id="label">Display Name</label>
+                    <input id="name" type="text" name="name" autofocus placeholder="Your hero name" />
                 </div>
-                <br>
+
                 <div class="form-field">
-                    <label id = "label">Game Pin</label>
-                    <input id = "pin" type="number" name="pin"/>
+                    <label id="label">Game Pin</label>
+                    <input id="pin" type="number" name="pin" placeholder="123456" />
                 </div>
-                <br>
+
                 <div class="form-field">
-                    <button id = "joinButton">Join</button>
+                    <button id="joinButton" type="submit">Enter Battle</button>
                 </div>
-        </form>
-        <br/>
-        <center><a href = "/create/" id = "host">Click here to host a Kahoot!</a></center>
+            </form>
+
+            <div class="divider"><span>or</span></div>
+            <a href="/create/" id="host">Host a Quiz</a>
+        </main>
     </body>
 </html>
